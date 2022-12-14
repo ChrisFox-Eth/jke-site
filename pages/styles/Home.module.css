@@ -101,7 +101,7 @@
 }
 
 .header {
-  background-color: var(--hero-darkblue);
+  background-color: var(--jke-1);
   position: fixed;
   top: 0;
   left: 0;
@@ -151,8 +151,9 @@
 }
 
 .logo {
-  width: 100%;
+  width: 70%;
   max-width: 500px;
+  margin-top: 10px;
 }
 
 .hupeScout {

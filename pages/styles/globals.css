@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
 
 /* Box sizing rules */
 *,
@@ -27,6 +28,10 @@ select {
 
 :root {
   --black: #1c1e21;
+  --gray: #292C33;
+  --jke-1: #6C4351;
+  --jke-2: #EE8559;
+  --jke-3: #573A5D;
   --light-blue: #3ECEFF;
   --purple: #5B17EA;
   --yellow: #FADF70;
@@ -61,7 +66,7 @@ a {
 }
 
 body {
-  background: var(--light-blue);
+  background: var(--jke-2);
   font-family: "DM Sans", sans-serif;
   color: var(--black);
   display: flex;
@@ -71,21 +76,21 @@ body {
 
 h1 {
   font-size: 4rem;
-  font-family: "Luckiest Guy", sans-serif;
+  font-family: "Belleza", sans-serif;
   letter-spacing: 2px;
   color: var(--hero-darkblue);
 }
 
 h2 {
   font-size: 2rem;
-  font-family: "Luckiest Guy", sans-serif;
+  font-family: "Belleza", sans-serif;
   letter-spacing: 1px;
   color: var(--hero-darkblue);
 }
 
 h3 {
   font-size: 1.5rem;
-  font-family: "Luckiest Guy", sans-serif;
+  font-family: "Belleza", sans-serif;
   letter-spacing: 1px;
   color: var(--hero-darkblue);
 }

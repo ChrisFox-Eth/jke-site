@@ -1,69 +1,48 @@
 import React from 'react';
 import styles from "/pages/styles/Home.module.css";
-import heroimage from "/public/HUPEScoutHero.png";
-import heart from "/public/HunnysHeart.svg";
-import skuzzrelic from "/public/SkuzzRelic.png";
-import hupeGIF from "/public/hupeGIF.gif";
+import heroimage from "/public/PrevailingAlbum.jpeg";
+import heart from "/public/JoeKenneyLogo.jpeg";
+import skuzzrelic from "/public/JoeKenneyLogo.jpeg";
+import hupeGIF from "/public/JoeKenneyLogo.jpeg";
 import { Image } from "../shared/Image";
 import { Link } from "../shared/Link";
 import { MenuLink } from "../shared/MenuLink";
 import NextLink, { LinkProps as ImportedLinkProps } from 'next/link';
-import {
-  ThirdwebNftMedia,
-  useAddress,
-  useDisconnect,
-  useMetamask,
-  useNetwork,
-  useNetworkMismatch,
-  useNFTCollection,
-  useNFTs,
-  useSigner,
-  useNFTBalance,
-} from "@thirdweb-dev/react";
-import { ChainId, ThirdwebSDK } from "@thirdweb-dev/sdk";
 
 export const Hero = () => {
-  const address = useAddress();
-  const connectWithMetamask = useMetamask();
-  const disconnectWallet = useDisconnect();
-  const signer = useSigner();
-  const isOnWrongNetwork = useNetworkMismatch();
-  const [, switchNetwork] = useNetwork();
   return (
 
     <div className={styles.container}>
       {/* Top Section */}
-      <div>
-        <Image
-          className={styles.hupeScout}
-          src={heroimage}
-          alt='Haley the Hupe Scout'
-          placeholder='blur'
-        />
-      </div>
 
       <div className={styles.aboutContainer}>
         {/* About Section */}
-            <ul className={styles.listItemsBig}>
-            <li className={styles.h2}><img src={`/HunnysHeart.svg`} className={styles.heartBullet}/>  Sell commissions of Hunnys derivative artwork under 1 unified collection</li>
-            <li className={styles.h2}><img src={`/HunnysHeart.svg`} className={styles.heartBullet}/>  Use the Hupe Scouts brand and logo for anything (commercial or otherwise!)</li>
-            <li className={styles.h2}><img src={`/HunnysHeart.svg`} className={styles.heartBullet}/>  Create Hunnys artwork and list it for sale or gift it to friends</li>
-            <li className={styles.h2}><img src={`/HunnysHeart.svg`} className={styles.heartBullet}/>  Grow the Hunnys brand on your own terms</li>
-            <li className={styles.h2}><img src={`/HunnysHeart.svg`} className={styles.heartBullet}/>  Commission Hunnys artwork from other artists and (with consent) mint it for sale</li>
-            <li className={styles.h2}><img src={`/HunnysHeart.svg`} className={styles.heartBullet}/>  Hold events, games, contests and more as you see fit</li>
-            </ul>
             <div className={styles.textGrid}>
-            <h1 className={styles.h1}>About</h1>
+            <h1 className={styles.h1}>JOE KENNEY</h1>
                 <div className={styles.textItem}>
-                  <p style={{ padding:"20px", textAlign:"left" }}>Hunny holders can Create, Earn and Grow this official community-owned brand using innovative decentralized technology.<br></br><br></br>
-                  Decentralized community participation is a core value of Web3 and we want to use that within Hunnys to reward and engage the loyal members who have found a home with us. Over the past months we have seen how dedicated and enthusiastic our community is, which is why we believe you have the right to help shape how it grows in a big way.<br></br><br></br>
-                  The Hunnys Hupe Scouts brand belongs to you. By working together, the community can grow the Hupe Scouts Brand alongside Hunnys10k and earn profits from their participation while making a meaningful impact on the project’s growth.</p>
-                  <Image
-                  className={styles.exampleImages}
-                  src={hupeGIF}
-                  alt='HupeGIF'
-                  />
+                  <p style={{ padding:"20px", textAlign:"left" }}>Joe Kenney -- a graduate of West Chester University of Pennsylvania with a B.M. in piano performance (2013) -- is a recording artist, songwriter, and pianist from Philadelphia. The music on his four albums and various collaborations span multiple genres, and are reflective of a cohesive blending of classical music theory, jazz fusion, rock, soul, and hip-hop idioms. Joe has garnered praise for both his original compositions and cover arrangements.</p>
             </div>
+            <div>
+            <h1 className={styles.h1}>LATEST DROP</h1>
+              <Image
+                className={styles.hupeScout}
+                src={heroimage}
+                alt='Joe Kenney Band'
+                placeholder='blur'
+              />
+              Out now on all digital platforms.
+            </div>
+            <div style={{ marginTop: 48, marginBottom: 48 }}>
+                <div>
+                  <iframe
+                    src="https://open.spotify.com/embed/album/2VZl2ZPf6hThJXukbVnQxW"
+                    width="600px"
+                    height="80px"
+                    frameBorder="0"
+                    >
+                    </iframe>
+                </div>
+                </div>
             </div>
             </div>
         </div>
