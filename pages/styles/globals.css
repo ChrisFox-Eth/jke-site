@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  --hello: -100%;
+  padding-bottom: 250px;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+:root {
+  --black: #1c1e21;
+  --light-blue: #3ECEFF;
+  --purple: #5B17EA;
+  --yellow: #FADF70;
+  --orange: #ff7b3e;
+  --pink: #DC4B87;
+  --hero-lightblue: #CAF0FD;
+  --hero-mediumblue: #469CCF;
+  --hero-darkblue: #2C678A;
+  --blue: #CAF0FD;
+  --white: #ffffff;
+  --tw-color1: #5B17EA;
+  --tw-color1-hover: #9333ea;
+}
+
+input:focus, textarea:focus {
+  background-color: #ffffff !important;
+}
+
+a:focus {
+  background-color: transparent !important;
+}
+
+:focus {
+  outline-style: none;
+  background-color: #000000 !important;
+  outline-color: black;
+}
+
+a {
+  text-decoration: none;
+  color:white;
+}
+
+body {
+  background: var(--light-blue);
+  font-family: "DM Sans", sans-serif;
+  color: var(--black);
+  display: flex;
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "Luckiest Guy", sans-serif;
+  letter-spacing: 2px;
+  color: var(--hero-darkblue);
+}
+
+h2 {
+  font-size: 2rem;
+  font-family: "Luckiest Guy", sans-serif;
+  letter-spacing: 1px;
+  color: var(--hero-darkblue);
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: "Luckiest Guy", sans-serif;
+  letter-spacing: 1px;
+  color: var(--hero-darkblue);
+}
