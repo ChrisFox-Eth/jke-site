@@ -6,7 +6,7 @@ import Head from "next/head";
 import Header from "../components/guide/Header";
 import Hero from "../components/guide/Hero";
 import Collection from "../components/guide/Collection";
-import HowTo from "../components/guide/HowTo";
+import Music from "../components/guide/Music";
 import ThirdwebGuideFooter from "../components/guide/ThirdwebGuideFooter";
 import Faq from "../components/guide/FAQ";
 import "./styles/globals.css";
@@ -35,7 +35,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     </Head>
       <Header />
       <Hero />
-      <HowTo />
+      <Music />
       <Component {...pageProps} />
       <Collection />
       <Faq />

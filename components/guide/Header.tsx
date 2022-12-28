@@ -22,6 +22,11 @@ export const Header = () => {
           src={logo}
           alt='Hunnys Hupe Scouts'
           placeholder='blur'
+          onClick={() =>
+            window.open(
+              "/",
+            )
+          }
           />
         </div>
       </div>
