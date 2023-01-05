@@ -1,9 +1,11 @@
 import React from 'react';
 import styles from "/pages/styles/Home.module.css";
-import heroimage from "/public/PrevailingAlbum.jpeg";
-import heart from "/public/JoeKenneyLogo.jpeg";
-import skuzzrelic from "/public/JoeKenneyLogo.jpeg";
-import hupeGIF from "/public/JoeKenneyLogo.jpeg";
+import prevailingAlbum from "/public/PrevailingAlbum.jpeg";
+import hero from "/public/hero.png";
+import merch from "/public/merch.gif";
+import shows from "/public/shows.png";
+import music from "/public/music.png";
+import about from "/public/about.png";
 import { Image } from "../shared/Image";
 import { Link } from "../shared/Link";
 import { MenuLink } from "../shared/MenuLink";
@@ -15,61 +17,61 @@ export const Hero = () => {
     <div className={styles.container}>
       {/* Top Section */}
 
-      <div className={styles.aboutContainer}>
+      <div className={styles.bodyContainer}>
         {/* About Section */}
-            <div className={styles.textGrid}>
-            <h1 className={styles.h1}>JOE KENNEY</h1>
-                <div className={styles.textItem}>
-                  <p style={{ padding:"20px", textAlign:"left" }}>Joe Kenney -- a graduate of West Chester University of Pennsylvania with a B.M. in piano performance (2013) -- is a recording artist, songwriter, and pianist from Philadelphia. The music on his four albums and various collaborations span multiple genres, and are reflective of a cohesive blending of classical music theory, jazz fusion, rock, soul, and hip-hop idioms. Joe has garnered praise for both his original compositions and cover arrangements.</p>
-            </div>
+        <h1 className={styles.h1}>Joe Kenney</h1>
+        <Image
+          className={styles.heroImage}
+          src={hero}
+          alt='Joe Kenney Band Music'
+          placeholder='blur'
+        />
+        <hr className={styles.rounded}></hr>
         <div className={styles.row}>
           <div className={styles.column}>
-          <h1> MUSIC </h1>
+          <MenuLink to='Music' href='/' offset={-50}>
             <Image
-              className={styles.hupeScout}
-              src={heroimage}
-              onClick={() =>
-                window.open(
-                  "https://hunnys.net",
-                )
-              }
-              alt='Joe Kenney Band'
+              className={styles.panelImages}
+              src={music}
+              alt='Joe Kenney Band Music'
               placeholder='blur'
             />
+          </MenuLink>
             </div>
             <div className={styles.column}>
-            <h1> SHOWS </h1>
+            <MenuLink href='https://www.joekenneypiano.com/performances' target='_blank'>
             <Image
-              className={styles.hupeScout}
-              src={heroimage}
-              alt='Joe Kenney Band'
+              className={styles.panelImages}
+              src={shows}
+              alt='Joe Kenney Band Performances'
               placeholder='blur'
             />
+            </MenuLink>
             </div>
           </div>
           <div className={styles.row}>
           <div className={styles.column}>
-          <h1> MERCH </h1>
+          <MenuLink href='https://joe-kenney-enterprises.myshopify.com/' target='_blank'>
             <Image
-              className={styles.hupeScout}
-              src={heroimage}
-              alt='Joe Kenney Band'
-              placeholder='blur'
+              className={styles.panelImages}
+              src={merch}
+              alt='Joe Kenney Band Merch'
             />
+            </MenuLink>
             </div>
             <div className={styles.column}>
-            <h1> ABOUT </h1>
+            <MenuLink to='about' href='/' offset={-100}>
             <Image
-              className={styles.hupeScout}
-              src={heroimage}
+              className={styles.panelImages}
+              src={about}
               alt='Joe Kenney Band'
               placeholder='blur'
             />
+            </MenuLink>
         </div>
         </div>
             </div>
             </div>
-        </div>
 
   );
 };

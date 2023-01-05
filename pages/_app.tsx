@@ -8,7 +8,7 @@ import Hero from "../components/guide/Hero";
 import Collection from "../components/guide/Collection";
 import Music from "../components/guide/Music";
 import ThirdwebGuideFooter from "../components/guide/ThirdwebGuideFooter";
-import Faq from "../components/guide/FAQ";
+import About from "../components/guide/About";
 import "./styles/globals.css";
 
 // This is the chainId your dApp will work on.
@@ -37,8 +37,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Hero />
       <Music />
       <Component {...pageProps} />
-      <Collection />
-      <Faq />
+      <About />
       <ThirdwebGuideFooter />
     </ThirdwebProvider>
   );

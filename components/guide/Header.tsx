@@ -17,20 +17,17 @@ export const Header = () => {
     <div className={styles.header}>
       <div className={styles.left}>
         <div>
+        <Link href='/' className='mr-4'>
         <Image
           className={styles.logo}
           src={logo}
-          alt='Hunnys Hupe Scouts'
+          alt='Joe Kenney Logo'
           placeholder='blur'
-          onClick={() =>
-            window.open(
-              "/",
-            )
-          }
           />
+          </Link>
         </div>
       </div>
-      <div className={styles.right}>
+      <div className={styles.social}>
       <a
         href='https://www.tiktok.com/@joekenneypiano/'
         target='_blank'

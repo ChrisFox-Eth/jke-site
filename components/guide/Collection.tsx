@@ -8,9 +8,8 @@ import { MenuLink } from "../shared/MenuLink";
 
 export const Collection = () => {
   return (
-          <div className={styles.aboutContainer}>
-    <div className={styles.collectionContainer}>
-      <h1 className={styles.ourCollection}>
+          <div className={styles.collectionContainer}>
+      <h1 className={styles.h1}>
         JOE KENNEY GENESIS:
       </h1>
       <div style={{ marginTop: 48, marginBottom: 48 }}>
@@ -21,7 +20,6 @@ export const Collection = () => {
         frameBorder="0"
       ></iframe>
       </div>
-</div>
     </div>
 );
 };
