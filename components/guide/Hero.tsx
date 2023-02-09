@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from "/pages/styles/Home.module.css";
 import prevailingAlbum from "/public/PrevailingAlbum.jpeg";
-import hero from "/public/hero.png";
+import hero from "/public/finalSiteHero.png";
 import merch from "/public/merch.gif";
 import shows from "/public/shows.png";
 import music from "/public/music.png";
@@ -19,7 +19,7 @@ export const Hero = () => {
 
       <div className={styles.bodyContainer}>
         {/* About Section */}
-        <h1 className={styles.h1}>Joe Kenney</h1>
+        <h1 className={styles.h1}></h1>
         <Image
           className={styles.heroImage}
           src={hero}

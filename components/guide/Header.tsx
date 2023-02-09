@@ -41,12 +41,6 @@ export const Header = () => {
         <YouTubeLogo width={24} height={24} />
         </a>
       <a
-        href='https://open.spotify.com/artist/5JyiHd887ZWNH1F0MrS0X1/'
-        target='_blank'
-        rel="noreferrer">
-        <SpotifyLogo width={24} height={24} />
-        </a>
-      <a
         href='https://www.instagram.com/joekenneypiano/'
         target='_blank'
         rel="noreferrer">

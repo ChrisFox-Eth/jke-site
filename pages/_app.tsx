@@ -4,6 +4,7 @@ import { ChainId, ThirdwebProvider } from "@thirdweb-dev/react";
 import { ThirdwebSDK } from "@thirdweb-dev/sdk";
 import Head from "next/head";
 import Header from "../components/guide/Header";
+import Footer from "../components/guide/Footer";
 import Hero from "../components/guide/Hero";
 import Collection from "../components/guide/Collection";
 import Music from "../components/guide/Music";

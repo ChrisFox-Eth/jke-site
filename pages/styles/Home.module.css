@@ -20,6 +20,18 @@
   font-size: 1.125rem;
 }
 
+.musicContainer {
+  display: flex;
+  margin: auto;
+  word-wrap: break-word;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  width: 100%;
+  padding: 0 24px;
+  font-size: 1.125rem;
+}
+
 .collectionContainer {
   display: flex;
   margin: auto;
@@ -54,6 +66,23 @@
   width: 30px;
 }
 
+.bookButton {
+  background-color: var(--hero-darkblue);
+  font-family: "Belleza", sans-serif;
+  outline: none;
+  border: none;
+  color: var(--white);
+  height: 48px;
+  padding: 24px 24px;
+  border-radius: 999px;
+  font-size: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: background-color 300ms ease-in-out;
+  transform-origin: center;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -64,7 +93,7 @@
 .column {
   margin:auto;
   flex: 40%;
-  max-width: 40%;
+  max-width: 50%;
   padding: 0 4px;
 }
 
@@ -73,6 +102,49 @@
   vertical-align: middle;
   width: 100%;
   border-radius: 20%;
+}
+
+.quoteRow {
+  display:-webkit-box;
+  padding: 20px 50px;
+}
+
+.quoteRow p {
+  margin:auto;
+  padding:20px 100px 20px 20px;
+}
+
+/* Create two equal columns that sits next to each other */
+.quoteColumn {
+  margin:auto;
+  display:-webkit-box;
+  width:auto;
+  max-width: 100%;
+  padding: 20px 20px;
+}
+
+.quoteRowLessons {
+  display:-webkit-box;
+  padding: 20px 20px;
+}
+
+.quoteRowLessons p {
+  margin:auto;
+  padding:20px 20px 20px 20px;
+}
+
+/* Create two equal columns that sits next to each other */
+.quoteColumnLessons {
+  margin:auto;
+  display:-webkit-box;
+  width:auto;
+  max-width: 100%;
+  padding: 20px 20px;
+}
+
+.quoteColumn img {
+  width: 100%;
+  border-radius: 59%;
 }
 
 .header {
@@ -90,8 +162,30 @@
   z-index: 1000;
 }
 
+.footer {
+  background-color: var(--jke-2);
+  position: relative;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 96px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+
 .left {
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footerLeft {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,15 +208,29 @@
   margin-top: 10px;
 }
 
+.quoteAlbums {
+  max-width: 50px;
+}
+
 .latestDrop {
   width: auto;
   max-width: 400px;
+  transition-property: background-color, border-color, color, fill, stroke,
+    opacity, box-shadow, transform;
+  transition-duration: 400ms;
 }
 
 .heroImage {
   width: 100%;
   max-width: 1000px;
-  margin-top: 20px;
+  opacity: .7;
+  margin: auto;
+}
+
+.bodyImage {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .panelImages {
@@ -140,16 +248,23 @@ hr.rounded {
   border-radius: 5px;
   margin-top: 100px;
   margin-bottom: 100px;
-  width:50%;
+  width:70%;
+  opacity:.3;
 }
 
-.panelImages:hover {
+.panelImages:hover, .latestDrop:hover {
   opacity: 0.8;
 }
 
 .footerBanner {
   width: 100%;
-  margin-top: 8rem;
+  margin-top: 4rem;
+  max-width: 1920px;
+  opacity: .7;
+}
+
+.musicBanner {
+  width: 100%;
   max-width: 1920px;
   opacity: .7;
 }
@@ -170,6 +285,15 @@ hr.rounded {
   justify-content: center;
   flex-direction: row;
   margin-right: 2%;
+}
+
+.footerSocial {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 3.75rem;
 }
 
 .textGrid {
@@ -245,13 +369,22 @@ hr.rounded {
   .collectionContainer {
     display:none;
   }
+  .quoteRow p {
+    padding:20px;
+  }
+  .quoteAlbums {
+    display:none;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .footerBanner {
     width: auto;
     align-items: center;
-    margin-top: 2%;
+    margin-top: 4rem;
+  }
+  .webEmbeds {
+    display:none;
   }
   .textItem {
     width: 100%;
